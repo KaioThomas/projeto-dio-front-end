@@ -1,0 +1,44 @@
+<body>
+<section>
+<form>
+    <div class="ipt">
+        <input (keyup.enter)="pesquisar()" (input)="pesquisar()" id="pesquisaInput" type="text"
+         placeholder="Pesquise aqui...">
+         <i (click)="limparInput()" class="bi bi-x-lg close-btn"></i>
+              </div>
+      <div class="lupa-c" (click)="pesquisar()">
+      <i class="bi bi-search lupa"></i>
+                </div>
+                <div class="quantidade">
+                  <p class="qntd-p">Produtos<p>
+                    <p class="qntd-n">({{ total }})</p>
+                </div>
+          </form>
+ <div class="produtos-c">
+    <div *ngFor="let produto of produtos">
+     <div class="produto-container">
+          <div class="foto-container">
+             <img id="{{ produto.id }}" class="produtoImg" src="assets/imagens/produtos/{{ produto.imagem }}"
+             alt="{{ produto.nome }}">
+             <div class="up-btn-container">
+              <i class="bi bi-heart"></i>
+              <i class="bi bi-cart3"></i>
+                         </div>
+                     </div>
+        <div class="descrição-container">
+           <p class="produto-nome">{{ produto.nome }}</p>
+           <div class="price-c">
+           <p class="price">R${{ produto.preco }}</p>
+           <p class="ex-price">R${{ produto.exPreco }}</p>
+                        </div>
+           <div class="btn-comprar-c">
+           <button class="btn-comprar">Comprar</button>
+                      </div>
+                   </div>
+            </div>
+    </div>
+</div>
+</section>
+</body>
+
+

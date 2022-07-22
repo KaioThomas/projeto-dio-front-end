@@ -1,0 +1,30 @@
+<header>
+  <h1>Growth</h1>
+  <div class="right">
+    <ul class="list">
+      <li (click)="mostrarDropdown('.contact')" class="link btn">Contato</li>
+             <ul class="dropdown contact">
+               <li class="dropdown-line"><a href="https://github.com/KaioThomas"
+                target="_blank">GitHub</a><i class="bi bi-github"></i></li>
+               <li class="dropdown-line"><a href="mailto:kaiopsouza59@gmail.com"
+                target="_blank">Email</a></li>
+               <li class="dropdown-line"><a href="https://www.linkedin.com/in/kaio-thomas-pereira-souza-851a69238/"
+                target="_blank">Linkedin</a><i class="bi bi-linkedin"></i></li>
+           </ul>
+           <li class="link"><i class="bi bi-heart"></i>Favoritos</li>
+      <li class="link"><i class="bi bi-cart3"></i>Carrinho</li>
+      <li (click)="mostrarDropdown('.count')" class="link btn" ><i class="bi bi-person-fill"></i>Conta</li>
+            <ul class="dropdown count">
+                <li class="dropdown-line">Conta</li>
+                <li class="dropdown-line">Entrar</li>
+            </ul>
+       </ul>
+    <div (click)="mostraMenu()" class="mobile-menu btn">
+      <div class="mobile-count dropdown-line"></div>
+      <div class="mobile-contact dropdown-line"></div>
+      <div class="mobile-bag dropdown-line"></div>
+    </div>
+  </div>
+</header>
+
+

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&family=Playfair+Display&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+h1{
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: box-shadow 0.1s;
+  border-radius: 16px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  letter-spacing: 5.5px;
+}
+
+header{
+  background-color: #181818;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  height: 1.5vh;
+  box-shadow: 0 10px 15px rgb(5, 5, 5);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu{
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu div{
+  width: 32px;
+  height: 2px;
+  background-color: #ffff;
+  margin: 8px;
+}
+
+
+.list{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin-left: 30px;
+  transition: transform 0.3s ease-in;
+}
+
+.list li i{
+  margin-right: 8px;
+}
+
+.link{
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.link:hover{
+  opacity: 0.6;
+}
+
+.dropdown{
+  position: absolute;
+  list-style: none;
+  font-size: 1.2rem;
+  box-shadow: 0 5px 15px black;
+  background-color: #121212;
+  top: 11vh;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  border-radius: 10px;
+  transform: translateY(-20%);
+}
+
+.count{
+ right: 14vw;
+}
+
+.dropdown-line{
+  position: relative;
+}
+
+.dropdown li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+.dropdown li:hover{
+  background-color: black;
+}
+
+.show{
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+
+
+
+
+/* css para telas menores: */
+
+@media (max-width: 999px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+  header{
+    padding: 0;
+    height: 11vh;
+    justify-content: space-around;
+  }
+
+ .link{
+    margin: 0;
+    padding-top: 70px;
+    text-align: center;
+    height: 50%;
+    width: 100%;
+    animation-name: animation;
+    animation-duration: 3s;
+    cursor: pointer;
+  }
+
+  .link:hover {
+    background-color: #313131;
+  }
+
+  .list{
+    position: absolute;
+    width: 50vw;
+    height: 89vh;
+    top: 11vh;
+    right: 0;
+    background-color: #181818;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(100%);
+  }
+
+  .mobile-menu{
+    display: block;
+  }
+
+  .dropdown{
+    top: 30%;
+    right: 30%;
+    width: 100%;
+    text-align: center;
+  }
+
+.active{
+    transform: translateX(0);
+  }
+
+@keyframes animation {
+  from {opacity: 0; transform: translateX(50px);}
+  to {opacity: 1; transform: translateX(0);}
+}
+
+}
+
+@media (max-width: 890px){
+
+}
+
+.abrir-search-mobile{
+  width: 20rem;
+  display: block;
+}
+
+.fechar-search-mobile{
+  width: 0;
+}
