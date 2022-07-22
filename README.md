@@ -1,5 +1,8 @@
 # Growth
 
+![image](https://user-images.githubusercontent.com/106848192/180489278-02e5a739-2350-4d41-9b5d-6702e3c860eb.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Development server
