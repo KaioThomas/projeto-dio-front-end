@@ -1,5 +1,17 @@
 # Growth
 
+loja de suplementos!
+
+
+![image](https://user-images.githubusercontent.com/106848192/181110251-6f97b963-d99b-49ba-84da-aca28eb111c3.png)
+
+versão para celulares:
+
+![image](https://user-images.githubusercontent.com/106848192/181110514-1fb15ba6-c3a4-4d78-b026-bc07fc80e707.png) ![image](https://user-images.githubusercontent.com/106848192/181110725-fc9e891f-192e-4be6-b417-d0fbd6b2c215.png)
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Development server
